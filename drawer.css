@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center ;
+}
+
+.drawer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    left: -28%;
+    background-color: orangered;
+    padding-left: 5vh;
+    padding-left: 5vh;
+    transition: all ease-in-out 0.6s;
+}
+
+.head{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+#arrow{
+    height: 3vh;
+    width: 2vw;
+    position: absolute;
+    right: -9vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    padding: 1.4vw;
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+
+#arrow img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    rotate: 0deg;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    position: relative;
+    margin-top: 8vh;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.pages p{
+    font-size: 2vw;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.pages p:hover{
+    color: black;
+}
+
+@media only screen and (max-width : 600px) {
+    #arrow{
+        height: 8vh;
+        width: 15vw;
+        position: absolute;
+        right: -8vh;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drawer{
+        width: 50%;
+        left: -61%;
+    }
+
+    .pages{
+        gap: 10vw;
+        position: relative;
+        margin-top: 13vh;
+        color: aliceblue;
+        font-family: sans-serif;
+    }
+
+    .pages p{
+        font-size: 5vw;
+    }
+}
